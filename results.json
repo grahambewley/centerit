@@ -1,0 +1,191 @@
+[
+    { 
+        "childElement": "h3",
+        "parents": [
+            {
+                "element":"div",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <div> horizontally",
+                        "css": "Method 1 CSS for centering <h3> in <div> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <div> horizontally",
+                        "css": "Method 2 CSS for centering <h3> in <div> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <div> vertically",
+                        "css": "Method 1 CSS for centering <h3> in <div> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <div> vertically",
+                        "css": "Method 2 CSS for centering <h3> in <div> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <div> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <h3> in <div> horizontally AND vertically"
+                    }
+                ]
+            },
+            {
+                "element":"main",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 2 CSS for centering <h3> in <main> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 2 CSS for centering <h3> in <main> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally AND vertically"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "childElement": "h4",
+        "parents": [
+            {
+                "element":"div",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <h4> in <div> horizontally",
+                        "css": "Method 1 CSS for centering <h4> in <div> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h4> in <div> horizontally",
+                        "css": "Method 2 CSS for centering <h4> in <div> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <h4> in <div> vertically",
+                        "css": "Method 1 CSS for centering <h4> in <div> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h4> in <div> vertically",
+                        "css": "Method 2 CSS for centering <h4> in <div> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <h4> in <div> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <h4> in <div> horizontally AND vertically"
+                    }
+                ]
+            },
+            {
+                "element":"main",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 2 CSS for centering <h3> in <main> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 2 CSS for centering <h3> in <main> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally AND vertically"
+                    }
+                ]
+            }
+        ]
+    },
+    { 
+        "childElement": "span",
+        "parents": [
+            {
+                "element":"div",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <span> in <div> horizontally",
+                        "css": "Method 1 CSS for centering <span> in <div> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <span> in <div> horizontally",
+                        "css": "Method 2 CSS for centering <span> in <div> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <span> in <div> vertically",
+                        "css": "Method 1 CSS for centering <span> in <div> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <span> in <div> vertically",
+                        "css": "Method 2 CSS for centering <span> in <div> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <span> in <div> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <span> in <div> horizontally AND vertically"
+                    }
+                ]
+            },
+            {
+                "element":"main",
+                "horizontally": [
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> horizontally",
+                        "css": "Method 2 CSS for centering <h3> in <main> horizontally"
+                    }
+                ],
+                "vertically":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> vertically"
+                    },
+                    {
+                        "html": "Method 2 HTML for centering <h3> in <main> vertically",
+                        "css": "Method 2 CSS for centering <h3> in <main> vertically"
+                    }
+                ],
+                "both":[
+                    {
+                        "html": "Method 1 HTML for centering <h3> in <main> horizontally AND vertically",
+                        "css": "Method 1 CSS for centering <h3> in <main> horizontally AND vertically"
+                    }
+                ]
+            }
+        ]
+    }
+]
