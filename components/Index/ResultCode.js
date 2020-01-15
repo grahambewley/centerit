@@ -44,19 +44,19 @@ const ResultCode = ({ query }) => {
                         menuItem: 'Method ' + (index + 1),
                         render: () => (
                             <Tab.Pane attached={false}>
-                                <Grid columns={2}>
+                                <Grid columns={2} stackable>
+                                    <Grid.Column>
+                                        <Segment size="small" inverted>
+                                            <Label size="tiny" color="black" attached='top'>CSS</Label>
+                                            <pre><code>{ child.css }</code></pre>
+                                        </Segment>
+                                    </Grid.Column>
                                     <Grid.Column>
                                         <Segment size="small" inverted>
                                             <Label size="tiny" color="black" attached='top'>HTML</Label>
                                             <div>
                                                 <code>{ child.html }</code>
                                             </div>
-                                        </Segment>
-                                    </Grid.Column>
-                                    <Grid.Column>
-                                        <Segment size="small" inverted>
-                                            <Label size="tiny" color="black" attached='top'>CSS</Label>
-                                            <pre><code>{ child.css }</code></pre>
                                         </Segment>
                                     </Grid.Column>
                                 </Grid>
