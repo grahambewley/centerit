@@ -5,6 +5,9 @@ import baseUrl from '../../utils/baseUrl';
 
 const ElementSelector = ({ childOptions, query, setQuery }) => {
 
+    // De-structure query for use in UI
+    const { child, parent, horizontally, vertically } = query;
+
     const [parentDisabled, setParentDisabled] = React.useState(true);
     const [parentLoading, setParentLoading] = React.useState(false);
     const [parentOptions, setParentOptions] = React.useState([]);
@@ -15,10 +18,7 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
         if(child) {
             getParentElements();
         }
-    }, [query]);
-
-    // De-structure query for use in UI
-    const { child, parent, horizontally, vertically } = query;
+    }, [child]);
 
     async function getParentElements() {
         const { child } = query;
@@ -55,9 +55,9 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
     return (
         <>
         <Segment.Group>
-        <Segment padded="very">
+        <Segment >
         <div className="dropdown-container">
-            <span className="selectorSpan" style={{marginRight: "1rem"}}>Center </span>
+            <span className="selectorSpan">Center </span>
             <Dropdown
                 className="elementDropdown"
                 placeholder='Child Element'
@@ -67,7 +67,7 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
                 options={childOptions}
                 onChange={handleDropdownUpdate}
             />
-            <span className="selectorSpan" style={{margin: "0 1rem"}}> in </span>
+            <span className="selectorSpan"> in </span>
             <Dropdown
                 placeholder='Parent Element'
                 search
@@ -80,9 +80,9 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
             />
         </div>
         </Segment>
-        <Segment placeholder >
-            <Grid columns={2} stackable>
-            <Grid.Column textAlign="center">
+        <Segment textAlign="center" basic>
+            {/* <Grid columns={2} stackable>
+            <Grid.Column textAlign="center">  */}
             {/* TODO: Highlight check-boxes if both dropdowns are filled */}
             <Label>
             <Checkbox 
@@ -91,8 +91,8 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
                 onChange={handleCheckboxUpdate}
             />
             </Label>
-            </Grid.Column>
-            <Grid.Column textAlign="center">
+            {/* </Grid.Column> 
+            <Grid.Column textAlign="center"> */}
             <Label >
             <Checkbox 
                 label="Horizontally"
@@ -100,8 +100,8 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
                 onChange={handleCheckboxUpdate}
             />
             </Label>
-            </Grid.Column>
-            </Grid>
+            {/* </Grid.Column>
+            </Grid> */}
         </Segment>
             <style jsx>{`
                 .selectorSpan {
@@ -111,9 +111,22 @@ const ElementSelector = ({ childOptions, query, setQuery }) => {
                 }
 
                 .dropdown-container {
+                    width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                }
+                .dropdown-container > span {
+                    margin: 0 1rem;
+                }
+
+                @media(max-width: 768px) {
+                    .dropdown-container {
+                        flex-direction: column;
+                    }
+                    .dropdown-container > span {
+                        margin: 1rem 0;
+                    }
                 }
 
                 .checkbox-container {

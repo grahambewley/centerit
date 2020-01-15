@@ -44,19 +44,19 @@ const ResultCode = ({ query }) => {
                         menuItem: 'Method ' + (index + 1),
                         render: () => (
                             <Tab.Pane attached={false}>
-                                <Grid iverted columns={2}>
+                                <Grid columns={2}>
                                     <Grid.Column>
                                         <Segment size="small" inverted>
                                             <Label size="tiny" color="black" attached='top'>HTML</Label>
-                                            
-                                            <div><pre><code>{ child.html }</code></pre></div>
-                                            
+                                            <div>
+                                                <code>{ child.html }</code>
+                                            </div>
                                         </Segment>
                                     </Grid.Column>
                                     <Grid.Column>
                                         <Segment size="small" inverted>
                                             <Label size="tiny" color="black" attached='top'>CSS</Label>
-                                            <div><code>{ child.css }</code></div>
+                                            <pre><code>{ child.css }</code></pre>
                                         </Segment>
                                     </Grid.Column>
                                 </Grid>
@@ -81,7 +81,7 @@ const ResultCode = ({ query }) => {
         {/* If results are available, show tab pane, otherwise show placeholder segment */}
         { resultAvailable 
             ? <>
-            <Tab inverted menu={{ secondary: true }} panes={panes}/> 
+            <Tab menu={{ secondary: true }} panes={panes}/> 
             <span>Something wrong? Please <a href=''>contact me</a> and let me know.</span>
             
             </> : 
